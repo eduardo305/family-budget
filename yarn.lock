@@ -19,7 +19,7 @@
     jsonpointer "^5.0.0"
     leven "^3.1.0"
 
-"@babel/code-frame@^7.10.4", "@babel/code-frame@^7.16.7":
+"@babel/code-frame@^7.0.0", "@babel/code-frame@^7.10.4", "@babel/code-frame@^7.16.7":
   version "7.16.7"
   resolved "https://artifactory.twitter.biz:443/api/npm/js-virtual/@babel/code-frame/-/code-frame-7.16.7.tgz#44416b6bd7624b998f5b1af5d470856c40138789"
   integrity sha1-REFra9diS5mPWxr11HCFbEATh4k=
@@ -1128,6 +1128,11 @@
   resolved "https://artifactory.twitter.biz:443/api/npm/js-virtual/@types/node/-/node-17.0.14.tgz#33b9b94f789a8fedd30a68efdbca4dbb06b61f20"
   integrity sha1-M7m5T3iaj+3TCmjv28pNuwa2HyA=
 
+"@types/parse-json@^4.0.0":
+  version "4.0.0"
+  resolved "https://artifactory.twitter.biz:443/api/npm/js-virtual/@types/parse-json/-/parse-json-4.0.0.tgz#2f8bb441434d163b35fb8ffdccd7138927ffb8c0"
+  integrity sha1-L4u0QUNNFjs1+4/9zNcTiSf/uMA=
+
 "@types/prop-types@*":
   version "15.7.4"
   resolved "https://artifactory.twitter.biz:443/api/npm/js-virtual/@types/prop-types/-/prop-types-15.7.4.tgz#fcf7205c25dff795ee79af1e30da2c9790808f11"
@@ -1221,6 +1226,25 @@ acorn-jsx@^5.3.1:
   resolved "https://artifactory.twitter.biz:443/api/npm/js-virtual/acorn-jsx/-/acorn-jsx-5.3.2.tgz#7ed5bb55908b3b2f1bc55c6af1653bada7f07937"
   integrity sha1-ftW7VZCLOy8bxVxq8WU7rafweTc=
 
+acorn-node@^1.6.1:
+  version "1.8.2"
+  resolved "https://artifactory.twitter.biz:443/api/npm/js-virtual/acorn-node/-/acorn-node-1.8.2.tgz#114c95d64539e53dede23de8b9d96df7c7ae2af8"
+  integrity sha1-EUyV1kU55T3t4j3oudlt98euKvg=
+  dependencies:
+    acorn "^7.0.0"
+    acorn-walk "^7.0.0"
+    xtend "^4.0.2"
+
+acorn-walk@^7.0.0:
+  version "7.2.0"
+  resolved "https://artifactory.twitter.biz:443/api/npm/js-virtual/acorn-walk/-/acorn-walk-7.2.0.tgz#0de889a601203909b0fbe07b8938dc21d2e967bc"
+  integrity sha1-DeiJpgEgOQmw++B7iTjcIdLpZ7w=
+
+acorn@^7.0.0:
+  version "7.4.1"
+  resolved "https://artifactory.twitter.biz:443/api/npm/js-virtual/acorn/-/acorn-7.4.1.tgz#feaed255973d2e77555b83dbc08851a6c63520fa"
+  integrity sha1-/q7SVZc9LndVW4PbwIhRpsY1IPo=
+
 acorn@^8.7.0:
   version "8.7.0"
   resolved "https://artifactory.twitter.biz:443/api/npm/js-virtual/acorn/-/acorn-8.7.0.tgz#90951fde0f8f09df93549481e5fc141445b791cf"
@@ -1269,6 +1293,19 @@ ansi-styles@^4.1.0:
   integrity sha1-7dgDYornHATIWuegkG7a00tkiTc=
   dependencies:
     color-convert "^2.0.1"
+
+anymatch@~3.1.2:
+  version "3.1.2"
+  resolved "https://artifactory.twitter.biz:443/api/npm/js-virtual/anymatch/-/anymatch-3.1.2.tgz#c0557c096af32f106198f4f4e2a383537e378716"
+  integrity sha1-wFV8CWrzLxBhmPT04qODU343hxY=
+  dependencies:
+    normalize-path "^3.0.0"
+    picomatch "^2.0.4"
+
+arg@^5.0.1:
+  version "5.0.1"
+  resolved "https://artifactory.twitter.biz:443/api/npm/js-virtual/arg/-/arg-5.0.1.tgz#eb0c9a8f77786cad2af8ff2b862899842d7b6adb"
+  integrity sha1-6wyaj3d4bK0q+P8rhiiZhC17ats=
 
 argparse@^2.0.1:
   version "2.0.1"
@@ -1344,6 +1381,18 @@ at-least-node@^1.0.0:
   resolved "https://artifactory.twitter.biz:443/api/npm/js-virtual/at-least-node/-/at-least-node-1.0.0.tgz#602cd4b46e844ad4effc92a8011a3c46e0238dc2"
   integrity sha1-YCzUtG6EStTv/JKoARo8RuAjjcI=
 
+autoprefixer@^10.4.2:
+  version "10.4.2"
+  resolved "https://artifactory.twitter.biz:443/api/npm/js-virtual/autoprefixer/-/autoprefixer-10.4.2.tgz#25e1df09a31a9fba5c40b578936b90d35c9d4d3b"
+  integrity sha1-JeHfCaMan7pcQLV4k2uQ01ydTTs=
+  dependencies:
+    browserslist "^4.19.1"
+    caniuse-lite "^1.0.30001297"
+    fraction.js "^4.1.2"
+    normalize-range "^0.1.2"
+    picocolors "^1.0.0"
+    postcss-value-parser "^4.2.0"
+
 axe-core@^4.3.5:
   version "4.4.0"
   resolved "https://artifactory.twitter.biz:443/api/npm/js-virtual/axe-core/-/axe-core-4.4.0.tgz#f93be7f81017eb8bedeb1859cc8092cc918d2dc8"
@@ -1410,6 +1459,11 @@ big.js@^5.2.2:
   resolved "https://artifactory.twitter.biz:443/api/npm/js-virtual/big.js/-/big.js-5.2.2.tgz#65f0af382f578bcdc742bd9c281e9cb2d7768328"
   integrity sha1-ZfCvOC9Xi83HQr2cKB6cstd2gyg=
 
+binary-extensions@^2.0.0:
+  version "2.2.0"
+  resolved "https://artifactory.twitter.biz:443/api/npm/js-virtual/binary-extensions/-/binary-extensions-2.2.0.tgz#75f502eeaf9ffde42fc98829645be4ea76bd9e2d"
+  integrity sha1-dfUC7q+f/eQvyYgpZFvk6na9ni0=
+
 brace-expansion@^1.1.7:
   version "1.1.11"
   resolved "https://artifactory.twitter.biz:443/api/npm/js-virtual/brace-expansion/-/brace-expansion-1.1.11.tgz#3c7fcbf529d87226f3d2f52b966ff5271eb441dd"
@@ -1418,7 +1472,7 @@ brace-expansion@^1.1.7:
     balanced-match "^1.0.0"
     concat-map "0.0.1"
 
-braces@^3.0.1:
+braces@^3.0.1, braces@~3.0.2:
   version "3.0.2"
   resolved "https://artifactory.twitter.biz:443/api/npm/js-virtual/braces/-/braces-3.0.2.tgz#3454e1a462ee8d599e236df336cd9ea4f8afe107"
   integrity sha1-NFThpGLujVmeI23zNs2epPiv4Qc=
@@ -1474,10 +1528,20 @@ callsites@^3.0.0:
   resolved "https://artifactory.twitter.biz:443/api/npm/js-virtual/callsites/-/callsites-3.1.0.tgz#b3630abd8943432f54b3f0519238e33cd7df2f73"
   integrity sha1-s2MKvYlDQy9Us/BRkjjjPNffL3M=
 
+camelcase-css@^2.0.1:
+  version "2.0.1"
+  resolved "https://artifactory.twitter.biz:443/api/npm/js-virtual/camelcase-css/-/camelcase-css-2.0.1.tgz#ee978f6947914cc30c6b44741b6ed1df7f043fd5"
+  integrity sha1-7pePaUeRTMMMa0R0G27R338EP9U=
+
 caniuse-lite@^1.0.30001283, caniuse-lite@^1.0.30001286:
   version "1.0.30001306"
   resolved "https://artifactory.twitter.biz:443/api/npm/js-virtual/caniuse-lite/-/caniuse-lite-1.0.30001306.tgz#582592afe243bad2223081b8abab07bf289cc699"
   integrity sha1-WCWSr+JDutIiMIG4q6sHvyicxpk=
+
+caniuse-lite@^1.0.30001297:
+  version "1.0.30001311"
+  resolved "https://artifactory.twitter.biz:443/api/npm/js-virtual/caniuse-lite/-/caniuse-lite-1.0.30001311.tgz#682ef3f4e617f1a177ad943de59775ed3032e511"
+  integrity sha1-aC7z9OYX8aF3rZQ95Zd17TAy5RE=
 
 chalk@^2.0.0, chalk@^2.4.2:
   version "2.4.2"
@@ -1488,13 +1552,28 @@ chalk@^2.0.0, chalk@^2.4.2:
     escape-string-regexp "^1.0.5"
     supports-color "^5.3.0"
 
-chalk@^4.0.0:
+chalk@^4.0.0, chalk@^4.1.2:
   version "4.1.2"
   resolved "https://artifactory.twitter.biz:443/api/npm/js-virtual/chalk/-/chalk-4.1.2.tgz#aac4e2b7734a740867aeb16bf02aad556a1e7a01"
   integrity sha1-qsTit3NKdAhnrrFr8CqtVWoeegE=
   dependencies:
     ansi-styles "^4.1.0"
     supports-color "^7.1.0"
+
+chokidar@^3.5.3:
+  version "3.5.3"
+  resolved "https://artifactory.twitter.biz:443/api/npm/js-virtual/chokidar/-/chokidar-3.5.3.tgz#1cf37c8707b932bd1af1ae22c0432e2acd1903bd"
+  integrity sha1-HPN8hwe5Mr0a8a4iwEMuKs0ZA70=
+  dependencies:
+    anymatch "~3.1.2"
+    braces "~3.0.2"
+    glob-parent "~5.1.2"
+    is-binary-path "~2.1.0"
+    is-glob "~4.0.1"
+    normalize-path "~3.0.0"
+    readdirp "~3.6.0"
+  optionalDependencies:
+    fsevents "~2.3.2"
 
 clean-webpack-plugin@^4.0.0:
   version "4.0.0"
@@ -1522,7 +1601,7 @@ color-name@1.1.3:
   resolved "https://artifactory.twitter.biz:443/api/npm/js-virtual/color-name/-/color-name-1.1.3.tgz#a7d0558bd89c42f795dd42328f740831ca53bc25"
   integrity sha1-p9BVi9icQveV3UIyj3QIMcpTvCU=
 
-color-name@~1.1.4:
+color-name@^1.1.4, color-name@~1.1.4:
   version "1.1.4"
   resolved "https://artifactory.twitter.biz:443/api/npm/js-virtual/color-name/-/color-name-1.1.4.tgz#c2a09a87acbde69543de6f63fa3995c826c536a2"
   integrity sha1-wqCah6y95pVD3m9j+jmVyCbFNqI=
@@ -1567,6 +1646,17 @@ core-js-pure@^3.20.2:
   resolved "https://artifactory.twitter.biz:443/api/npm/js-virtual/core-js-pure/-/core-js-pure-3.21.0.tgz#819adc8dfb808205ce25b51d50591becd615db7e"
   integrity sha1-gZrcjfuAggXOJbUdUFkb7NYV234=
 
+cosmiconfig@^7.0.1:
+  version "7.0.1"
+  resolved "https://artifactory.twitter.biz:443/api/npm/js-virtual/cosmiconfig/-/cosmiconfig-7.0.1.tgz#714d756522cace867867ccb4474c5d01bbae5d6d"
+  integrity sha1-cU11ZSLKzoZ4Z8y0R0xdAbuuXW0=
+  dependencies:
+    "@types/parse-json" "^4.0.0"
+    import-fresh "^3.2.1"
+    parse-json "^5.0.0"
+    path-type "^4.0.0"
+    yaml "^1.10.0"
+
 cross-spawn@^7.0.2:
   version "7.0.3"
   resolved "https://artifactory.twitter.biz:443/api/npm/js-virtual/cross-spawn/-/cross-spawn-7.0.3.tgz#f73a85b9d5d41d045551c177e2882d4ac85728a6"
@@ -1580,6 +1670,11 @@ crypto-random-string@^2.0.0:
   version "2.0.0"
   resolved "https://artifactory.twitter.biz:443/api/npm/js-virtual/crypto-random-string/-/crypto-random-string-2.0.0.tgz#ef2a7a966ec11083388369baa02ebead229b30d5"
   integrity sha1-7yp6lm7BEIM4g2m6oC6+rSKbMNU=
+
+cssesc@^3.0.0:
+  version "3.0.0"
+  resolved "https://artifactory.twitter.biz:443/api/npm/js-virtual/cssesc/-/cssesc-3.0.0.tgz#37741919903b868565e1c09ea747445cd18983ee"
+  integrity sha1-N3QZGZA7hoVl4cCep0dEXNGJg+4=
 
 csstype@^3.0.2:
   version "3.0.10"
@@ -1629,6 +1724,11 @@ define-properties@^1.1.3:
   dependencies:
     object-keys "^1.0.12"
 
+defined@^1.0.0:
+  version "1.0.0"
+  resolved "https://artifactory.twitter.biz:443/api/npm/js-virtual/defined/-/defined-1.0.0.tgz#c98d9bcef75674188e110969151199e39b1fa693"
+  integrity sha1-yY2bzvdWdBiOEQlpFRGZ45sfppM=
+
 del@^4.1.1:
   version "4.1.1"
   resolved "https://artifactory.twitter.biz:443/api/npm/js-virtual/del/-/del-4.1.1.tgz#9e8f117222ea44a31ff3a156c049b99052a9f0b4"
@@ -1647,12 +1747,31 @@ denque@^2.0.1:
   resolved "https://artifactory.twitter.biz:443/api/npm/js-virtual/denque/-/denque-2.0.1.tgz#bcef4c1b80dc32efe97515744f21a4229ab8934a"
   integrity sha1-vO9MG4DcMu/pdRV0TyGkIpq4k0o=
 
+detective@^5.2.0:
+  version "5.2.0"
+  resolved "https://artifactory.twitter.biz:443/api/npm/js-virtual/detective/-/detective-5.2.0.tgz#feb2a77e85b904ecdea459ad897cc90a99bd2a7b"
+  integrity sha1-/rKnfoW5BOzepFmtiXzJCpm9Kns=
+  dependencies:
+    acorn-node "^1.6.1"
+    defined "^1.0.0"
+    minimist "^1.1.1"
+
+didyoumean@^1.2.2:
+  version "1.2.2"
+  resolved "https://artifactory.twitter.biz:443/api/npm/js-virtual/didyoumean/-/didyoumean-1.2.2.tgz#989346ffe9e839b4555ecf5666edea0d3e8ad037"
+  integrity sha1-mJNG/+noObRVXs9WZu3qDT6K0Dc=
+
 dir-glob@^3.0.1:
   version "3.0.1"
   resolved "https://artifactory.twitter.biz:443/api/npm/js-virtual/dir-glob/-/dir-glob-3.0.1.tgz#56dbf73d992a4a93ba1584f4534063fd2e41717f"
   integrity sha1-Vtv3PZkqSpO6FYT0U0Bj/S5BcX8=
   dependencies:
     path-type "^4.0.0"
+
+dlv@^1.1.3:
+  version "1.1.3"
+  resolved "https://artifactory.twitter.biz:443/api/npm/js-virtual/dlv/-/dlv-1.1.3.tgz#5c198a8a11453596e751494d49874bc7732f2e79"
+  integrity sha1-XBmKihFFNZbnUUlNSYdLx3MvLnk=
 
 doctrine@^2.1.0:
   version "2.1.0"
@@ -1689,6 +1808,13 @@ emojis-list@^3.0.0:
   version "3.0.0"
   resolved "https://artifactory.twitter.biz:443/api/npm/js-virtual/emojis-list/-/emojis-list-3.0.0.tgz#5570662046ad29e2e916e71aae260abdff4f6a78"
   integrity sha1-VXBmIEatKeLpFucariYKvf9Pang=
+
+error-ex@^1.3.1:
+  version "1.3.2"
+  resolved "https://artifactory.twitter.biz:443/api/npm/js-virtual/error-ex/-/error-ex-1.3.2.tgz#b4ac40648107fdcdcfae242f428bea8a14d4f1bf"
+  integrity sha1-tKxAZIEH/c3PriQvQovqihTU8b8=
+  dependencies:
+    is-arrayish "^0.2.1"
 
 es-abstract@^1.19.0, es-abstract@^1.19.1:
   version "1.19.1"
@@ -1953,7 +2079,7 @@ fast-deep-equal@^3.1.1, fast-deep-equal@^3.1.3:
   resolved "https://artifactory.twitter.biz:443/api/npm/js-virtual/fast-deep-equal/-/fast-deep-equal-3.1.3.tgz#3a7d56b559d6cbc3eb512325244e619a65c6c525"
   integrity sha1-On1WtVnWy8PrUSMlJE5hmmXGxSU=
 
-fast-glob@^3.2.9:
+fast-glob@^3.2.11, fast-glob@^3.2.9:
   version "3.2.11"
   resolved "https://artifactory.twitter.biz:443/api/npm/js-virtual/fast-glob/-/fast-glob-3.2.11.tgz#a1172ad95ceb8a16e20caa5c5e56480e5129c1d9"
   integrity sha1-oRcq2VzrihbiDKpcXlZIDlEpwdk=
@@ -2039,6 +2165,11 @@ flatted@^3.1.0:
   resolved "https://artifactory.twitter.biz:443/api/npm/js-virtual/flatted/-/flatted-3.2.5.tgz#76c8584f4fc843db64702a6bd04ab7a8bd666da3"
   integrity sha1-dshYT0/IQ9tkcCpr0Eq3qL1mbaM=
 
+fraction.js@^4.1.2:
+  version "4.1.3"
+  resolved "https://artifactory.twitter.biz:443/api/npm/js-virtual/fraction.js/-/fraction.js-4.1.3.tgz#be65b0f20762ef27e1e793860bc2dfb716e99e65"
+  integrity sha1-vmWw8gdi7yfh55OGC8LftxbpnmU=
+
 fs-extra@^9.0.1:
   version "9.1.0"
   resolved "https://artifactory.twitter.biz:443/api/npm/js-virtual/fs-extra/-/fs-extra-9.1.0.tgz#5954460c764a8da2094ba3554bf839e6b9a7c86d"
@@ -2096,14 +2227,14 @@ get-symbol-description@^1.0.0:
     call-bind "^1.0.2"
     get-intrinsic "^1.1.1"
 
-glob-parent@^5.1.2:
+glob-parent@^5.1.2, glob-parent@~5.1.2:
   version "5.1.2"
   resolved "https://artifactory.twitter.biz:443/api/npm/js-virtual/glob-parent/-/glob-parent-5.1.2.tgz#869832c58034fe68a4093c17dc15e8340d8401c4"
   integrity sha1-hpgyxYA0/mikCTwX3BXoNA2EAcQ=
   dependencies:
     is-glob "^4.0.1"
 
-glob-parent@^6.0.1:
+glob-parent@^6.0.1, glob-parent@^6.0.2:
   version "6.0.2"
   resolved "https://artifactory.twitter.biz:443/api/npm/js-virtual/glob-parent/-/glob-parent-6.0.2.tgz#6d237d99083950c79290f24c7642a3de9a28f9e3"
   integrity sha1-bSN9mQg5UMeSkPJMdkKj3poo+eM=
@@ -2268,12 +2399,24 @@ ip@^1.1.5:
   resolved "https://artifactory.twitter.biz:443/api/npm/js-virtual/ip/-/ip-1.1.5.tgz#bdded70114290828c0a039e72ef25f5aaec4354a"
   integrity sha1-vd7XARQpCCjAoDnnLvJfWq7ENUo=
 
+is-arrayish@^0.2.1:
+  version "0.2.1"
+  resolved "https://artifactory.twitter.biz:443/api/npm/js-virtual/is-arrayish/-/is-arrayish-0.2.1.tgz#77c99840527aa8ecb1a8ba697b80645a7a926a9d"
+  integrity sha1-d8mYQFJ6qOyxqLppe4BkWnqSap0=
+
 is-bigint@^1.0.1:
   version "1.0.4"
   resolved "https://artifactory.twitter.biz:443/api/npm/js-virtual/is-bigint/-/is-bigint-1.0.4.tgz#08147a1875bc2b32005d41ccd8291dffc6691df3"
   integrity sha1-CBR6GHW8KzIAXUHM2Ckd/8ZpHfM=
   dependencies:
     has-bigints "^1.0.1"
+
+is-binary-path@~2.1.0:
+  version "2.1.0"
+  resolved "https://artifactory.twitter.biz:443/api/npm/js-virtual/is-binary-path/-/is-binary-path-2.1.0.tgz#ea1f7f3b80f064236e83470f86c09c254fb45b09"
+  integrity sha1-6h9/O4DwZCNug0cPhsCcJU+0Wwk=
+  dependencies:
+    binary-extensions "^2.0.0"
 
 is-boolean-object@^1.1.0:
   version "1.1.2"
@@ -2307,7 +2450,7 @@ is-extglob@^2.1.1:
   resolved "https://artifactory.twitter.biz:443/api/npm/js-virtual/is-extglob/-/is-extglob-2.1.1.tgz#a88c02535791f02ed37c76a1b9ea9773c833f8c2"
   integrity sha1-qIwCU1eR8C7TfHahueqXc8gz+MI=
 
-is-glob@^4.0.0, is-glob@^4.0.1, is-glob@^4.0.3:
+is-glob@^4.0.0, is-glob@^4.0.1, is-glob@^4.0.3, is-glob@~4.0.1:
   version "4.0.3"
   resolved "https://artifactory.twitter.biz:443/api/npm/js-virtual/is-glob/-/is-glob-4.0.3.tgz#64f61e42cbbb2eec2071a9dac0b28ba1e65d5084"
   integrity sha1-ZPYeQsu7LuwgcanawLKLoeZdUIQ=
@@ -2459,6 +2602,11 @@ jsesc@~0.5.0:
   resolved "https://artifactory.twitter.biz:443/api/npm/js-virtual/jsesc/-/jsesc-0.5.0.tgz#e7dee66e35d6fc16f710fe91d5cf69f70f08911d"
   integrity sha1-597mbjXW/Bb3EP6R1c9p9w8IkR0=
 
+json-parse-even-better-errors@^2.3.0:
+  version "2.3.1"
+  resolved "https://artifactory.twitter.biz:443/api/npm/js-virtual/json-parse-even-better-errors/-/json-parse-even-better-errors-2.3.1.tgz#7c47805a94319928e05777405dc12e1f7a4ee02d"
+  integrity sha1-fEeAWpQxmSjgV3dAXcEuH3pO4C0=
+
 json-schema-traverse@^0.4.1:
   version "0.4.1"
   resolved "https://artifactory.twitter.biz:443/api/npm/js-virtual/json-schema-traverse/-/json-schema-traverse-0.4.1.tgz#69f6a87d9513ab8bb8fe63bdb0979c448e684660"
@@ -2544,6 +2692,16 @@ levn@^0.4.1:
   dependencies:
     prelude-ls "^1.2.1"
     type-check "~0.4.0"
+
+lilconfig@^2.0.4:
+  version "2.0.4"
+  resolved "https://artifactory.twitter.biz:443/api/npm/js-virtual/lilconfig/-/lilconfig-2.0.4.tgz#f4507d043d7058b380b6a8f5cb7bcd4b34cee082"
+  integrity sha1-9FB9BD1wWLOAtqj1y3vNSzTO4II=
+
+lines-and-columns@^1.1.6:
+  version "1.2.4"
+  resolved "https://artifactory.twitter.biz:443/api/npm/js-virtual/lines-and-columns/-/lines-and-columns-1.2.4.tgz#eca284f75d2965079309dc0ad9255abb2ebc1632"
+  integrity sha1-7KKE910pZQeTCdwK2SVauy68FjI=
 
 loader-utils@^1.4.0:
   version "1.4.0"
@@ -2647,7 +2805,7 @@ minimatch@^3.0.4:
   dependencies:
     brace-expansion "^1.1.7"
 
-minimist@^1.2.0, minimist@^1.2.5:
+minimist@^1.1.1, minimist@^1.2.0, minimist@^1.2.5:
   version "1.2.5"
   resolved "https://artifactory.twitter.biz:443/api/npm/js-virtual/minimist/-/minimist-1.2.5.tgz#67d66014b66a6a8aaa0c083c5fd58df4e4e97602"
   integrity sha1-Z9ZgFLZqaoqqDAg8X9WN9OTpdgI=
@@ -2713,7 +2871,7 @@ ms@^2.1.1:
   resolved "https://artifactory.twitter.biz:443/api/npm/js-virtual/ms/-/ms-2.1.3.tgz#574c8138ce1d2b5861f0b44579dbadd60c6615b2"
   integrity sha1-V0yBOM4dK1hh8LRFedut1gxmFbI=
 
-nanoid@^3.1.30:
+nanoid@^3.1.30, nanoid@^3.2.0:
   version "3.2.0"
   resolved "https://artifactory.twitter.biz:443/api/npm/js-virtual/nanoid/-/nanoid-3.2.0.tgz#62667522da6673971cca916a6d3eff3f415ff80c"
   integrity sha1-YmZ1Itpmc5ccypFqbT7/P0Ff+Aw=
@@ -2763,10 +2921,25 @@ node-releases@^2.0.1:
   resolved "https://artifactory.twitter.biz:443/api/npm/js-virtual/node-releases/-/node-releases-2.0.1.tgz#3d1d395f204f1f2f29a54358b9fb678765ad2fc5"
   integrity sha1-PR05XyBPHy8ppUNYuftnh2WtL8U=
 
+normalize-path@^3.0.0, normalize-path@~3.0.0:
+  version "3.0.0"
+  resolved "https://artifactory.twitter.biz:443/api/npm/js-virtual/normalize-path/-/normalize-path-3.0.0.tgz#0dcd69ff23a1c9b11fd0978316644a0388216a65"
+  integrity sha1-Dc1p/yOhybEf0JeDFmRKA4ghamU=
+
+normalize-range@^0.1.2:
+  version "0.1.2"
+  resolved "https://artifactory.twitter.biz:443/api/npm/js-virtual/normalize-range/-/normalize-range-0.1.2.tgz#2d10c06bdfd312ea9777695a4d28439456b75942"
+  integrity sha1-LRDAa9/TEuqXd2laTShDlFa3WUI=
+
 object-assign@^4.0.1, object-assign@^4.1.1:
   version "4.1.1"
   resolved "https://artifactory.twitter.biz:443/api/npm/js-virtual/object-assign/-/object-assign-4.1.1.tgz#2109adc7965887cfc05cbbd442cac8bfbb360863"
   integrity sha1-IQmtx5ZYh8/AXLvUQsrIv7s2CGM=
+
+object-hash@^2.2.0:
+  version "2.2.0"
+  resolved "https://artifactory.twitter.biz:443/api/npm/js-virtual/object-hash/-/object-hash-2.2.0.tgz#5ad518581eefc443bd763472b8ff2e9c2c0d54a5"
+  integrity sha1-WtUYWB7vxEO9djRyuP8unCwNVKU=
 
 object-inspect@^1.11.0, object-inspect@^1.9.0:
   version "1.12.0"
@@ -2892,6 +3065,16 @@ parent-module@^1.0.0:
   dependencies:
     callsites "^3.0.0"
 
+parse-json@^5.0.0:
+  version "5.2.0"
+  resolved "https://artifactory.twitter.biz:443/api/npm/js-virtual/parse-json/-/parse-json-5.2.0.tgz#c76fc66dee54231c962b22bcc8a72cf2f99753cd"
+  integrity sha1-x2/Gbe5UIxyWKyK8yKcs8vmXU80=
+  dependencies:
+    "@babel/code-frame" "^7.0.0"
+    error-ex "^1.3.1"
+    json-parse-even-better-errors "^2.3.0"
+    lines-and-columns "^1.1.6"
+
 path-exists@^3.0.0:
   version "3.0.0"
   resolved "https://artifactory.twitter.biz:443/api/npm/js-virtual/path-exists/-/path-exists-3.0.0.tgz#ce0ebeaa5f78cb18925ea7d810d7b59b010fd515"
@@ -2932,7 +3115,7 @@ picocolors@^1.0.0:
   resolved "https://artifactory.twitter.biz:443/api/npm/js-virtual/picocolors/-/picocolors-1.0.0.tgz#cb5bdc74ff3f51892236eaf79d68bc44564ab81c"
   integrity sha1-y1vcdP8/UYkiNur3nWi8RFZKuBw=
 
-picomatch@^2.2.2, picomatch@^2.2.3:
+picomatch@^2.0.4, picomatch@^2.2.1, picomatch@^2.2.2, picomatch@^2.2.3:
   version "2.3.1"
   resolved "https://artifactory.twitter.biz:443/api/npm/js-virtual/picomatch/-/picomatch-2.3.1.tgz#3ba3833733646d9d3e4995946c1365a67fb07a42"
   integrity sha1-O6ODNzNkbZ0+SZWUbBNlpn+wekI=
@@ -2966,6 +3149,41 @@ pkg-dir@^4.1.0:
   dependencies:
     find-up "^4.0.0"
 
+postcss-js@^4.0.0:
+  version "4.0.0"
+  resolved "https://artifactory.twitter.biz:443/api/npm/js-virtual/postcss-js/-/postcss-js-4.0.0.tgz#31db79889531b80dc7bc9b0ad283e418dce0ac00"
+  integrity sha1-Mdt5iJUxuA3HvJsK0oPkGNzgrAA=
+  dependencies:
+    camelcase-css "^2.0.1"
+
+postcss-load-config@^3.1.0:
+  version "3.1.2"
+  resolved "https://artifactory.twitter.biz:443/api/npm/js-virtual/postcss-load-config/-/postcss-load-config-3.1.2.tgz#c3a24208ad168f317464aaf59655252781f04365"
+  integrity sha1-w6JCCK0WjzF0ZKr1llUlJ4HwQ2U=
+  dependencies:
+    lilconfig "^2.0.4"
+    yaml "^1.10.2"
+
+postcss-nested@5.0.6:
+  version "5.0.6"
+  resolved "https://artifactory.twitter.biz:443/api/npm/js-virtual/postcss-nested/-/postcss-nested-5.0.6.tgz#466343f7fc8d3d46af3e7dba3fcd47d052a945bc"
+  integrity sha1-RmND9/yNPUavPn26P81H0FKpRbw=
+  dependencies:
+    postcss-selector-parser "^6.0.6"
+
+postcss-selector-parser@^6.0.6, postcss-selector-parser@^6.0.9:
+  version "6.0.9"
+  resolved "https://artifactory.twitter.biz:443/api/npm/js-virtual/postcss-selector-parser/-/postcss-selector-parser-6.0.9.tgz#ee71c3b9ff63d9cd130838876c13a2ec1a992b2f"
+  integrity sha1-7nHDuf9j2c0TCDiHbBOi7BqZKy8=
+  dependencies:
+    cssesc "^3.0.0"
+    util-deprecate "^1.0.2"
+
+postcss-value-parser@^4.2.0:
+  version "4.2.0"
+  resolved "https://artifactory.twitter.biz:443/api/npm/js-virtual/postcss-value-parser/-/postcss-value-parser-4.2.0.tgz#723c09920836ba6d3e5af019f92bc0971c02e514"
+  integrity sha1-cjwJkgg2um0+WvAZ+SvAlxwC5RQ=
+
 postcss@8.4.5:
   version "8.4.5"
   resolved "https://artifactory.twitter.biz:443/api/npm/js-virtual/postcss/-/postcss-8.4.5.tgz#bae665764dfd4c6fcc24dc0fdf7e7aa00cc77f95"
@@ -2974,6 +3192,15 @@ postcss@8.4.5:
     nanoid "^3.1.30"
     picocolors "^1.0.0"
     source-map-js "^1.0.1"
+
+postcss@^8.4.6:
+  version "8.4.6"
+  resolved "https://artifactory.twitter.biz:443/api/npm/js-virtual/postcss/-/postcss-8.4.6.tgz#c5ff3c3c457a23864f32cb45ac9b741498a09ae1"
+  integrity sha1-xf88PEV6I4ZPMstFrJt0FJigmuE=
+  dependencies:
+    nanoid "^3.2.0"
+    picocolors "^1.0.0"
+    source-map-js "^1.0.2"
 
 prelude-ls@^1.2.1:
   version "1.2.1"
@@ -3004,6 +3231,11 @@ queue-microtask@^1.2.2:
   resolved "https://artifactory.twitter.biz:443/api/npm/js-virtual/queue-microtask/-/queue-microtask-1.2.3.tgz#4929228bbc724dfac43e0efb058caf7b6cfb6243"
   integrity sha1-SSkii7xyTfrEPg77BYyve2z7YkM=
 
+quick-lru@^5.1.1:
+  version "5.1.1"
+  resolved "https://artifactory.twitter.biz:443/api/npm/js-virtual/quick-lru/-/quick-lru-5.1.1.tgz#366493e6b3e42a3a6885e2e99d18f80fb7a8c932"
+  integrity sha1-NmST5rPkKjpoheLpnRj4D7eoyTI=
+
 randombytes@^2.1.0:
   version "2.1.0"
   resolved "https://artifactory.twitter.biz:443/api/npm/js-virtual/randombytes/-/randombytes-2.1.0.tgz#df6f84372f0270dc65cdf6291349ab7a473d4f2a"
@@ -3032,6 +3264,13 @@ react@17.0.2:
   dependencies:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
+
+readdirp@~3.6.0:
+  version "3.6.0"
+  resolved "https://artifactory.twitter.biz:443/api/npm/js-virtual/readdirp/-/readdirp-3.6.0.tgz#74a370bd857116e245b29cc97340cd431a02a6c7"
+  integrity sha1-dKNwvYVxFuJFspzJc0DNQxoCpsc=
+  dependencies:
+    picomatch "^2.2.1"
 
 regenerate-unicode-properties@^10.0.1:
   version "10.0.1"
@@ -3109,7 +3348,7 @@ resolve-from@^4.0.0:
   resolved "https://artifactory.twitter.biz:443/api/npm/js-virtual/resolve-from/-/resolve-from-4.0.0.tgz#4abcd852ad32dd7baabfe9b40e00a36db5f392e6"
   integrity sha1-SrzYUq0y3Xuqv+m0DgCjbbXzkuY=
 
-resolve@^1.14.2, resolve@^1.19.0, resolve@^1.20.0:
+resolve@^1.14.2, resolve@^1.19.0, resolve@^1.20.0, resolve@^1.22.0:
   version "1.22.0"
   resolved "https://artifactory.twitter.biz:443/api/npm/js-virtual/resolve/-/resolve-1.22.0.tgz#5e0b8c67c15df57a89bdbabe603a002f21731198"
   integrity sha1-XguMZ8Fd9XqJvbq+YDoALyFzEZg=
@@ -3292,7 +3531,7 @@ source-list-map@^2.0.0:
   resolved "https://artifactory.twitter.biz:443/api/npm/js-virtual/source-list-map/-/source-list-map-2.0.1.tgz#3993bd873bfc48479cca9ea3a547835c7c154b34"
   integrity sha1-OZO9hzv8SEecyp6jpUeDXHwVSzQ=
 
-source-map-js@^1.0.1:
+source-map-js@^1.0.1, source-map-js@^1.0.2:
   version "1.0.2"
   resolved "https://artifactory.twitter.biz:443/api/npm/js-virtual/source-map-js/-/source-map-js-1.0.2.tgz#adbc361d9c62df380125e7f161f71c826f1e490c"
   integrity sha1-rbw2HZxi3zgBJefxYfccgm8eSQw=
@@ -3435,6 +3674,32 @@ supports-preserve-symlinks-flag@^1.0.0:
   version "1.0.0"
   resolved "https://artifactory.twitter.biz:443/api/npm/js-virtual/supports-preserve-symlinks-flag/-/supports-preserve-symlinks-flag-1.0.0.tgz#6eda4bd344a3c94aea376d4cc31bc77311039e09"
   integrity sha1-btpL00SjyUrqN21MwxvHcxEDngk=
+
+tailwindcss@^3.0.21:
+  version "3.0.21"
+  resolved "https://artifactory.twitter.biz:443/api/npm/js-virtual/tailwindcss/-/tailwindcss-3.0.21.tgz#2b3f2aa579bc8bb91165af9d23f69c5e7bdfab03"
+  integrity sha1-Kz8qpXm8i7kRZa+dI/acXnvfqwM=
+  dependencies:
+    arg "^5.0.1"
+    chalk "^4.1.2"
+    chokidar "^3.5.3"
+    color-name "^1.1.4"
+    cosmiconfig "^7.0.1"
+    detective "^5.2.0"
+    didyoumean "^1.2.2"
+    dlv "^1.1.3"
+    fast-glob "^3.2.11"
+    glob-parent "^6.0.2"
+    is-glob "^4.0.3"
+    normalize-path "^3.0.0"
+    object-hash "^2.2.0"
+    postcss-js "^4.0.0"
+    postcss-load-config "^3.1.0"
+    postcss-nested "5.0.6"
+    postcss-selector-parser "^6.0.9"
+    postcss-value-parser "^4.2.0"
+    quick-lru "^5.1.1"
+    resolve "^1.22.0"
 
 temp-dir@^2.0.0:
   version "2.0.0"
@@ -3609,6 +3874,11 @@ use-subscription@1.5.1:
   integrity sha1-c1ARB/AvrYTG3VeWW+sLdcaMQtE=
   dependencies:
     object-assign "^4.1.1"
+
+util-deprecate@^1.0.2:
+  version "1.0.2"
+  resolved "https://artifactory.twitter.biz:443/api/npm/js-virtual/util-deprecate/-/util-deprecate-1.0.2.tgz#450d4dc9fa70de732762fbd2d4a28981419a0ccf"
+  integrity sha1-RQ1Nyfpw3nMnYvvS1KKJgUGaDM8=
 
 v8-compile-cache@^2.0.3:
   version "2.3.0"
@@ -3849,7 +4119,17 @@ wrappy@1:
   resolved "https://artifactory.twitter.biz:443/api/npm/js-virtual/wrappy/-/wrappy-1.0.2.tgz#b5243d8f3ec1aa35f1364605bc0d1036e30ab69f"
   integrity sha1-tSQ9jz7BqjXxNkYFvA0QNuMKtp8=
 
+xtend@^4.0.2:
+  version "4.0.2"
+  resolved "https://artifactory.twitter.biz:443/api/npm/js-virtual/xtend/-/xtend-4.0.2.tgz#bb72779f5fa465186b1f438f674fa347fdb5db54"
+  integrity sha1-u3J3n1+kZRhrH0OPZ0+jR/2121Q=
+
 yallist@^4.0.0:
   version "4.0.0"
   resolved "https://artifactory.twitter.biz:443/api/npm/js-virtual/yallist/-/yallist-4.0.0.tgz#9bb92790d9c0effec63be73519e11a35019a3a72"
   integrity sha1-m7knkNnA7/7GO+c1GeEaNQGaOnI=
+
+yaml@^1.10.0, yaml@^1.10.2:
+  version "1.10.2"
+  resolved "https://artifactory.twitter.biz:443/api/npm/js-virtual/yaml/-/yaml-1.10.2.tgz#2301c5ffbf12b467de8da2333a459e29e7920e4b"
+  integrity sha1-IwHF/78StGfejaIzOkWeKeeSDks=
