@@ -8,6 +8,7 @@ interface BudgetsPageProps {
 }
 
 const BudgetsPage: NextPage<BudgetsPageProps> = ({ expenses }) => {
+  // TODO: Refactor this method
   return (
     <div className="m-4">
       <Head>
