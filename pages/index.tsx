@@ -46,8 +46,12 @@ const BudgetsPage: NextPage<BudgetsPageProps> = ({ expenses }) => {
 
 // This gets called on every request
 export async function getServerSideProps() {
+  console.log("eduardo", process.env.BASE_API_HOST);
+
   // Fetch data from external API
-  const response = await (await fetch(`/api/expenses`)).json();
+  const response = await (
+    await fetch(`${process.env.BASE_API_HOST}/api/expenses`)
+  ).json();
 
   // Pass data to the page via props
   return {

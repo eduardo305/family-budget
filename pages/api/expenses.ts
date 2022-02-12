@@ -18,6 +18,7 @@ export default async function handler(
 
     /* find all the data in our database */
     const result = await ExpenseModel.find({});
+    console.log("🚀 ~ file: expenses.ts ~ line 21 ~ result", result);
     const expenses = result.map((doc: any) => {
       const expense = doc.toObject();
       return {
